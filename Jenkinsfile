@@ -37,7 +37,7 @@ pipeline {
             steps {
                 sh """
                     echo 'Starting new container...'
-                    docker run -d --name hello -p 8000:8000 django:1.0.0
+                    docker run -d --name hello -p 8000:8000 djangoapp:1.0.0
                 """
             }
         }
